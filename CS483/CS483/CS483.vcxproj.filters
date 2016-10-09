@@ -34,9 +34,6 @@
     <Filter Include="HeatStroke\Graphics\Shaders">
       <UniqueIdentifier>{faa40a65-1b3f-4f26-9d4d-35ec88ca40cc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="HeatStroke\Graphics\Common">
-      <UniqueIdentifier>{1597dadb-01dd-4838-af5c-c9fbb29386b8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="HeatStroke\Graphics\Debug">
       <UniqueIdentifier>{2c5b1998-510b-4154-bee1-e907c671be12}</UniqueIdentifier>
     </Filter>
@@ -78,6 +75,12 @@
     </Filter>
     <Filter Include="Data">
       <UniqueIdentifier>{d0092d9f-cd87-4aea-9857-bb41fb0689c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Services\OBJ">
+      <UniqueIdentifier>{e4f04642-6344-4eae-9178-224848e3b5f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Services\MTL">
+      <UniqueIdentifier>{06c11ea8-e527-4143-a729-514e45249b39}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -122,9 +125,6 @@
     </ClCompile>
     <ClCompile Include="..\..\HeatStroke\Graphics\Buffer\VertexDeclaration.cpp">
       <Filter>HeatStroke\Graphics\Buffer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\HeatStroke\Graphics\Common\Common.cpp">
-      <Filter>HeatStroke\Graphics\Common</Filter>
     </ClCompile>
     <ClCompile Include="..\..\HeatStroke\Graphics\Debug\LineDrawer.cpp">
       <Filter>HeatStroke\Graphics\Debug</Filter>
@@ -192,6 +192,15 @@
     <ClCompile Include="..\..\HeatStroke\SceneManagement\ScenePointLight.cpp">
       <Filter>HeatStroke\SceneManagement</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\HeatStroke\Services\OBJ\OBJFile.cpp">
+      <Filter>HeatStroke\Services\OBJ</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HeatStroke\Services\MTL\MTLFile.cpp">
+      <Filter>HeatStroke\Services\MTL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\HeatStroke\Common\Common.cpp">
+      <Filter>HeatStroke\Common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\HeatStroke\Services\IO\KeyboardInputBuffer.h">
@@ -250,12 +259,6 @@
     </ClInclude>
     <ClInclude Include="..\..\HeatStroke\Graphics\Buffer\VertexDeclaration.h">
       <Filter>HeatStroke\Graphics\Buffer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\HeatStroke\Graphics\Common\Common.h">
-      <Filter>HeatStroke\Graphics\Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\HeatStroke\Graphics\Common\Types.h">
-      <Filter>HeatStroke\Graphics\Common</Filter>
     </ClInclude>
     <ClInclude Include="..\..\HeatStroke\Graphics\Debug\LineDrawer.h">
       <Filter>HeatStroke\Graphics\Debug</Filter>
@@ -331,6 +334,18 @@
     </ClInclude>
     <ClInclude Include="..\..\HeatStroke\SceneManagement\ScenePointLight.h">
       <Filter>HeatStroke\SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeatStroke\Services\OBJ\OBJFile.h">
+      <Filter>HeatStroke\Services\OBJ</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeatStroke\Services\MTL\MTLFile.h">
+      <Filter>HeatStroke\Services\MTL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeatStroke\Common\Common.h">
+      <Filter>HeatStroke\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\HeatStroke\Common\Types.h">
+      <Filter>HeatStroke\Common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
