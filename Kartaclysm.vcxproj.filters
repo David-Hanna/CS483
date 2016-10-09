@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\HeatStroke\Common\Game.cpp">
+      <Filter>HeatStroke\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Geometry\AABB.cpp">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Geometry\Collisions.cpp">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\GOComponents\GameObject.cpp">
+      <Filter>HeatStroke\GOComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\GOComponents\Components\ComponentCamera.cpp">
+      <Filter>HeatStroke\GOComponents\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\GOComponents\Components\ComponentPointLight.cpp">
+      <Filter>HeatStroke\GOComponents\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Buffer\Buffer.cpp">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Buffer\BufferManager.cpp">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Buffer\IndexBuffer.cpp">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Buffer\VertexBuffer.cpp">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Buffer\VertexDeclaration.cpp">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Common\Common.cpp">
+      <Filter>HeatStroke\Graphics\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Debug\LineDrawer.cpp">
+      <Filter>HeatStroke\Graphics\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Material\Material.cpp">
+      <Filter>HeatStroke\Graphics\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Material\MaterialManager.cpp">
+      <Filter>HeatStroke\Graphics\Material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Program\Program.cpp">
+      <Filter>HeatStroke\Graphics\Program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Program\ProgramManager.cpp">
+      <Filter>HeatStroke\Graphics\Program</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Renderable\Model.cpp">
+      <Filter>HeatStroke\Graphics\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Renderable\Node.cpp">
+      <Filter>HeatStroke\Graphics\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Renderable\Sprite.cpp">
+      <Filter>HeatStroke\Graphics\Renderable</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Scene\Camera.cpp">
+      <Filter>HeatStroke\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Scene\Scene.cpp">
+      <Filter>HeatStroke\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Scene\SceneQuadTreeNode.cpp">
+      <Filter>HeatStroke\Graphics\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Texture\Texture.cpp">
+      <Filter>HeatStroke\Graphics\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Graphics\Texture\TextureManager.cpp">
+      <Filter>HeatStroke\Graphics\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\SceneManagement\SceneManager.cpp">
+      <Filter>HeatStroke\SceneManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\SceneManagement\ScenePointLight.cpp">
+      <Filter>HeatStroke\SceneManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Services\Events\Event.cpp">
+      <Filter>HeatStroke\Services\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Services\Events\EventManager.cpp">
+      <Filter>HeatStroke\Services\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Services\GameObjectManager\GameObjectManager.cpp">
+      <Filter>HeatStroke\Services\GameObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Services\IO\KeyboardInputBuffer.cpp">
+      <Filter>HeatStroke\Services\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Services\IO\MouseInputBuffer.cpp">
+      <Filter>HeatStroke\Services\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Services\XML\EasyXML.cpp">
+      <Filter>HeatStroke\Services\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\StateMachine\StateMachine.cpp">
+      <Filter>HeatStroke\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Transform\Transform.cpp">
+      <Filter>HeatStroke\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HeatStroke\Transform\HierarchicalTransform.cpp">
+      <Filter>HeatStroke\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Kartaclysm\main.cpp">
+      <Filter>Kartaclysm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\HeatStroke\Common\Game.h">
+      <Filter>HeatStroke\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Geometry\AABB.h">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Geometry\Collidable.h">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Geometry\Collisions.h">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Geometry\Sphere.h">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Geometry\Frustum.h">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Geometry\Plane.h">
+      <Filter>HeatStroke\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\GOComponents\GameObject.h">
+      <Filter>HeatStroke\GOComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\GOComponents\Components\Component.h">
+      <Filter>HeatStroke\GOComponents\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\GOComponents\Components\ComponentCamera.h">
+      <Filter>HeatStroke\GOComponents\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\GOComponents\Components\ComponentPointLight.h">
+      <Filter>HeatStroke\GOComponents\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\GOComponents\Components\ComponentRenderable.h">
+      <Filter>HeatStroke\GOComponents\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Buffer\Buffer.h">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Buffer\BufferManager.h">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Buffer\IndexBuffer.h">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Buffer\VertexBuffer.h">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Buffer\VertexDeclaration.h">
+      <Filter>HeatStroke\Graphics\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Common\Common.h">
+      <Filter>HeatStroke\Graphics\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Common\Types.h">
+      <Filter>HeatStroke\Graphics\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Debug\LineDrawer.h">
+      <Filter>HeatStroke\Graphics\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Material\Material.h">
+      <Filter>HeatStroke\Graphics\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Material\MaterialManager.h">
+      <Filter>HeatStroke\Graphics\Material</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Program\Program.h">
+      <Filter>HeatStroke\Graphics\Program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Program\ProgramManager.h">
+      <Filter>HeatStroke\Graphics\Program</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Renderable\Model.h">
+      <Filter>HeatStroke\Graphics\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Renderable\Renderable.h">
+      <Filter>HeatStroke\Graphics\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Renderable\Node.h">
+      <Filter>HeatStroke\Graphics\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Renderable\Sprite.h">
+      <Filter>HeatStroke\Graphics\Renderable</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Scene\Camera.h">
+      <Filter>HeatStroke\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Scene\Scene.h">
+      <Filter>HeatStroke\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Scene\SceneQuadTreeNode.h">
+      <Filter>HeatStroke\Graphics\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Texture\Texture.h">
+      <Filter>HeatStroke\Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Graphics\Texture\TextureManager.h">
+      <Filter>HeatStroke\Graphics\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\SceneManagement\SceneCamera.h">
+      <Filter>HeatStroke\SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\SceneManagement\SceneManager.h">
+      <Filter>HeatStroke\SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\SceneManagement\ScenePointLight.h">
+      <Filter>HeatStroke\SceneManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Services\Events\Event.h">
+      <Filter>HeatStroke\Services\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Services\Events\EventManager.h">
+      <Filter>HeatStroke\Services\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Services\GameObjectManager\GameObjectManager.h">
+      <Filter>HeatStroke\Services\GameObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Services\IO\KeyboardInputBuffer.h">
+      <Filter>HeatStroke\Services\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Services\IO\MouseInputBuffer.h">
+      <Filter>HeatStroke\Services\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Services\XML\EasyXML.h">
+      <Filter>HeatStroke\Services\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\StateMachine\State.h">
+      <Filter>HeatStroke\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\StateMachine\StateMachine.h">
+      <Filter>HeatStroke\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Transform\Transform.h">
+      <Filter>HeatStroke\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HeatStroke\Transform\HierarchicalTransform.h">
+      <Filter>HeatStroke\Transform</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="HeatStroke">
+      <UniqueIdentifier>{a7d7e53d-995e-451a-9794-7bb2d8cb97f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Common">
+      <UniqueIdentifier>{10efb2b5-8d60-4b57-9f6b-e58a1aec2603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Geometry">
+      <UniqueIdentifier>{0032b998-7dd2-44c2-aa96-e5a74f8f0e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\GOComponents">
+      <UniqueIdentifier>{26c5f703-106f-4956-9975-cc2ebd8ebad8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics">
+      <UniqueIdentifier>{81568695-3569-4773-9410-eca1c37280d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\SceneManagement">
+      <UniqueIdentifier>{9b4be392-09fe-4184-b6b2-96b7d10928db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Services">
+      <UniqueIdentifier>{c4f99130-317c-482b-ba2f-436560f22dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\StateMachine">
+      <UniqueIdentifier>{df5b65dd-c3e1-4741-94f8-9a6087da240a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Transform">
+      <UniqueIdentifier>{9ea2e77e-251b-45fd-a843-3d26c395cd0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\GOComponents\Components">
+      <UniqueIdentifier>{9376e1c8-ea10-462c-a5ac-a7098d7e483e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Buffer">
+      <UniqueIdentifier>{a5e1c9cd-cd61-454b-b637-0a82da402d23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Common">
+      <UniqueIdentifier>{6d12e78d-b278-4d52-847e-06cfa4c55029}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Debug">
+      <UniqueIdentifier>{8ed8f42e-4239-4919-bc59-ac76f9352a27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Material">
+      <UniqueIdentifier>{7e5c0f67-ece9-48d8-997a-8edcae83177b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Program">
+      <UniqueIdentifier>{b358c0ab-ed57-43eb-8884-5e10d5c1193f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Renderable">
+      <UniqueIdentifier>{62641167-6b33-48a4-8857-2f57367ca471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Scene">
+      <UniqueIdentifier>{d9415f1a-1669-4a26-8b6b-b6c120140a9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Graphics\Texture">
+      <UniqueIdentifier>{04760f34-b7ed-44f3-a2a0-eff85c39e5ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Services\Events">
+      <UniqueIdentifier>{e96e99cf-c389-44a8-bed8-21d97c7791b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Services\GameObjectManager">
+      <UniqueIdentifier>{cd096be8-42d7-45bb-a9ba-b3bd19fcd469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Services\IO">
+      <UniqueIdentifier>{5eb020e2-b682-4954-8962-6d91a2dac386}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeatStroke\Services\XML">
+      <UniqueIdentifier>{6c9e501a-d436-429c-8733-d34ebfada4be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Kartaclysm">
+      <UniqueIdentifier>{a729c99f-1dcf-41ce-a547-747f6e644cfd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
