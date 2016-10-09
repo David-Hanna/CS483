@@ -6,10 +6,8 @@
 //-----------------------------------------------------------------------------
 
 #include "Common.h"
-#include "Types.h"
 
 #ifdef _DEBUG
-#include <iostream>
 void GL_CHECK_ERROR(const char* file, int line)
 {
 	GLenum e = glGetError();
@@ -24,21 +22,9 @@ void GL_CHECK_ERROR(const char* file, int line)
 inline void GL_CHECK_ERROR(const char* file, int line) {}
 #endif
 
-namespace HeatStroke
+std::string HeatStroke::Common::LoadWholeFile(const std::string& p_strFile)
 {
-
-//----------------------------------------------------------
-// Loads in a whole file and returns the contents.
-//----------------------------------------------------------
-std::shared_ptr<std::string> LoadWholeFile(const std::string& p_strFile)
-{
-	std::ifstream ifs(p_strFile);
-	
-	std::shared_ptr<std::string> pFileContents = std::shared_ptr<std::string>(new std::string(
-		std::istreambuf_iterator<char>(ifs),
-		std::istreambuf_iterator<char>()));
-
-	return pFileContents;
+	return std::string(std::istreambuf_iterator<char>(std::ifstream(p_strFile)), std::istreambuf_iterator<char>());
 }
 
 //----------------------------------------------------------
@@ -52,8 +38,8 @@ bool CompileShader(GLuint* p_pShader, GLenum p_eType, const std::string& p_strFi
     GLint iStatus;
     const GLchar* pSource;
     
-	std::shared_ptr<std::string> pBuff = LoadWholeFile(p_strFile);
-    pSource = static_cast<const GLchar*>(pBuff->c_str());
+	std::string strBuff = HeatStroke::Common::LoadWholeFile(p_strFile);
+    pSource = static_cast<const GLchar*>(strBuff.c_str());
     if( !pSource )
     {
         printf("Failed to load vertex shader\n");
@@ -132,7 +118,7 @@ bool LinkProgram(GLuint p_uiProg)
 // failure (and print errors to stdout), else the created
 // program object
 //----------------------------------------------------------
-GLuint LoadShaders(const std::string& p_strVSFile, const std::string& p_strPSFile)
+GLuint HeatStroke::Common::LoadShaders(const std::string& p_strVSFile, const std::string& p_strPSFile)
 {
     GLuint uiVS, uiPS;
     
@@ -201,7 +187,7 @@ GLuint LoadShaders(const std::string& p_strVSFile, const std::string& p_strPSFil
     return uiProgram;
 }
 
-FIBITMAP* LoadTGA(const std::string& p_strFile)
+FIBITMAP* HeatStroke::Common::LoadTGA(const std::string& p_strFile)
 {
 	FIBITMAP* image = FreeImage_Load(FIF_TARGA, p_strFile.c_str(), 0);
 	assert(image != nullptr);
@@ -400,19 +386,18 @@ int DDSImageSize(unsigned int w,
 	}
 }
 
-GLuint CreateTextureFromDDS(const std::string& p_strFile, unsigned int* p_pWidth, unsigned int* p_pHeight, bool* p_pHasMips)
+GLuint HeatStroke::Common::CreateTextureFromDDS(const std::string& p_strFile, unsigned int* p_pWidth, unsigned int* p_pHeight, bool* p_pHasMips)
 {
 	DDS_TEXTURE dds;
 	memset(&dds, 0, sizeof(dds));
 
-	//unsigned char* pBuff = (unsigned char*) LoadWholeFile(p_strFile);
-	std::shared_ptr<std::string> pBuff = LoadWholeFile(p_strFile);
+	std::string strBuff = LoadWholeFile(p_strFile);
 
-	const unsigned char* pStart = reinterpret_cast<const unsigned char*>(pBuff->c_str());
+	const unsigned char* pStart = reinterpret_cast<const unsigned char*>(strBuff.c_str());
 	const unsigned char* pCurrent = pStart;
 
 	// read in file marker, make sure its a DDS file
-	if(strncmp(pBuff->c_str(), "DDS ", 4) != 0)
+	if(strncmp(strBuff.c_str(), "DDS ", 4) != 0)
 	{
 		printf("%s is not a dds file", p_strFile.c_str());
 		return 0;
@@ -516,4 +501,10 @@ GLuint CreateTextureFromDDS(const std::string& p_strFile, unsigned int* p_pWidth
 
     return uiTex;
 }
+
+std::vector<std::string> HeatStroke::Common::StringSplit(const std::string& p_strToSplit, const char* p_strDelimiter)
+{
+	std::vector<std::string> vResult;
+	boost::split(vResult, p_strToSplit, boost::is_any_of(p_strDelimiter));
+	return vResult;
 }
